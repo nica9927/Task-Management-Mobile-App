@@ -19,7 +19,7 @@ class CustomText extends StatelessWidget {
       padding: padding ?? EdgeInsets.all(0),
       child: AutoSizeText(
         text ?? "",
-        style: GoogleFonts.roboto(
+        style: GoogleFonts.prompt(
             fontSize: fontSize,
             fontWeight: fontWeight ?? null,
             color: color ?? Colors.black87.withOpacity(0.8)

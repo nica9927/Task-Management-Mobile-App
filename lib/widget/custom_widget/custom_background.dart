@@ -17,26 +17,31 @@ class CustomBackground extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BackdropFilter(
-      filter: ImageFilter.blur(sigmaX: sigmaX ?? 0.2, sigmaY: sigmaY ?? 0.2),
+      filter: ImageFilter.blur(sigmaX: sigmaX ?? 10, sigmaY: sigmaY ?? 10),
       child: Container(
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height,
         decoration: BoxDecoration(
-          gradient: LinearGradient(
-              begin: Alignment.topLeft,
-              end: Alignment.bottomRight,
-              colors: [
-               // beginColor ?? Color(0xff5FC3E4).withOpacity(0.3),
-               //  Colors.white.withOpacity(0.1),
-               // endColor ??  Color(0xffE55D87).withOpacity(0.3)
-                Color(0x3377A1D3),
-                Color(0x3379CBCA),
-                Color(0x33E684AE),
-              ]
-          ),
+          // gradient: LinearGradient(
+          //     begin: Alignment.topLeft,
+          //     end: Alignment.bottomRight,
+          //     colors: [
+          //      // beginColor ?? Color(0xff5FC3E4).withOpacity(0.3),
+          //      //  Colors.white.withOpacity(0.1),
+          //      // endColor ??  Color(0xffE55D87).withOpacity(0.3)
+          //       Color(0x55C6FFDD),
+          //       Color(0x55FBD786),
+          //       Color(0x55f7797d),
+          //
+          //     ]
+          // ),
+          image: DecorationImage(
+            image: AssetImage("assets/image/background/gradientBg.jpg"),
+            fit: BoxFit.cover
+          )
         ),
         child: Container(
-          // color: Colors.grey.withOpacity(opacity ?? 0.01),
+          color: Colors.white.withOpacity(opacity ?? 0.3),
           child: child ?? null,
         ),
       ),

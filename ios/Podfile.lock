@@ -86,6 +86,13 @@ PODS:
     - Flutter
   - path_provider (0.0.1):
     - Flutter
+  - QuickBlox (2.17.10)
+  - Quickblox-WebRTC (2.7.6):
+    - QuickBlox (>= 2.7)
+  - quickblox_sdk (0.0.1-alpha):
+    - Flutter
+    - QuickBlox (~> 2.17.10)
+    - Quickblox-WebRTC (~> 2.7.6)
   - Reachability (3.2)
   - SDWebImage (5.11.1):
     - SDWebImage/Core (= 5.11.1)
@@ -124,6 +131,7 @@ DEPENDENCIES:
   - onesignal_flutter (from `.symlinks/plugins/onesignal_flutter/ios`)
   - package_info (from `.symlinks/plugins/package_info/ios`)
   - path_provider (from `.symlinks/plugins/path_provider/ios`)
+  - quickblox_sdk (from `.symlinks/plugins/quickblox_sdk/ios`)
   - shared_preferences (from `.symlinks/plugins/shared_preferences/ios`)
   - sqflite (from `.symlinks/plugins/sqflite/ios`)
   - url_launcher (from `.symlinks/plugins/url_launcher/ios`)
@@ -140,6 +148,8 @@ SPEC REPOS:
     - libwebp
     - Mantle
     - OneSignalXCFramework
+    - QuickBlox
+    - Quickblox-WebRTC
     - Reachability
     - SDWebImage
     - SDWebImageWebPCoder
@@ -176,6 +186,8 @@ EXTERNAL SOURCES:
     :path: ".symlinks/plugins/package_info/ios"
   path_provider:
     :path: ".symlinks/plugins/path_provider/ios"
+  quickblox_sdk:
+    :path: ".symlinks/plugins/quickblox_sdk/ios"
   shared_preferences:
     :path: ".symlinks/plugins/shared_preferences/ios"
   sqflite:
@@ -212,6 +224,9 @@ SPEC CHECKSUMS:
   OneSignalXCFramework: 4e08d8353adec161c3d9174e2572c849e1225c9f
   package_info: 873975fc26034f0b863a300ad47e7f1ac6c7ec62
   path_provider: abfe2b5c733d04e238b0d8691db0cfd63a27a93c
+  QuickBlox: 49d85c6e1782993fb2383001301b788a8d7dcad3
+  Quickblox-WebRTC: 162d2421d91cfb3d4f7e01f87e095633ca52bb1d
+  quickblox_sdk: 9ce8b6d99695835a8a3333dc7ac9acd49a44fb13
   Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDWebImage: a7f831e1a65eb5e285e3fb046a23fcfbf08e696d
   SDWebImageWebPCoder: f93010f3f6c031e2f8fb3081ca4ee6966c539815
@@ -223,6 +238,6 @@ SPEC CHECKSUMS:
   wakelock: d0fc7c864128eac40eba1617cb5264d9c940b46f
   webview_flutter: 3603125dfd3bcbc9d8d418c3f80aeecf331c068b
 
-PODFILE CHECKSUM: fe0e1ee7f3d1f7d00b11b474b62dd62134535aea
+PODFILE CHECKSUM: cc1f88378b4bfcf93a6ce00d2c587857c6008d3b
 
 COCOAPODS: 1.10.1

@@ -30,6 +30,7 @@ dependencies:
   passcode_screen: ^2.0.0
   flutter_secure_storage: ^4.2.0
   badges: ^2.0.1
+  quickblox_sdk: ^0.5.1-beta
 
 
 

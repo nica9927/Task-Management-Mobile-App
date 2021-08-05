@@ -12,6 +12,10 @@ class AppRouter {
 
   String get home => "/home";
 
+  String get room => "/room";
+
+  String get chat => "/chat";
+
 
 
 
