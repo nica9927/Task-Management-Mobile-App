@@ -1,5 +1,7 @@
 import 'package:task_management_app/screen/main/chat/chat_provider.dart';
 import 'package:task_management_app/screen/main/chat/chat_screen.dart';
+import 'package:task_management_app/screen/main/chat_test/agora_chat_provider.dart';
+import 'package:task_management_app/screen/main/chat_test/agora_chat_screen.dart';
 import 'package:task_management_app/screen/main/home/home_provider.dart';
 import 'package:task_management_app/screen/main/home/home_screen.dart';
 import 'package:task_management_app/screen/main/room/room_provider.dart';
@@ -48,6 +50,15 @@ class AppModule extends Module {
           child: (context, args) => ChangeNotifierProvider<ChatProvider>(
             create: (context) => ChatProvider(),
             child: ChatScreen(),
+          ),
+        ),
+        ChildRoute(
+          appRouter.agoraChat,
+          transition: TransitionType.custom,
+          customTransition: transition.fadeThroughTransition,
+          child: (context, args) => ChangeNotifierProvider<AgoraChatProvider>(
+            create: (context) => AgoraChatProvider(),
+            child: AgoraChatScreen(),
           ),
         ),
       ];

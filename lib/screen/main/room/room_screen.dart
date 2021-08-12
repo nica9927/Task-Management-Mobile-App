@@ -61,10 +61,15 @@ class _RoomScreenState extends State<RoomScreen> with AfterLayoutMixin {
                             SizedBox(
                               width: 10,
                             ),
-                            CustomText(
-                              text: "Hi!, ${user?.fullName ?? ""}",
-                              fontSize: 24,
-                              fontWeight: FontWeight.bold,
+                            GestureDetector(
+                              onTap: (){
+                                Modular.to.pushNamed(AppRouter.fromModule().agoraChat);
+                              },
+                              child: CustomText(
+                                text: "Hi!, ${user?.fullName ?? ""}",
+                                fontSize: 24,
+                                fontWeight: FontWeight.bold,
+                              ),
                             ),
                           ],
                         ),

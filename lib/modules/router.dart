@@ -16,6 +16,8 @@ class AppRouter {
 
   String get chat => "/chat";
 
+  String get agoraChat => "/agoraChat";
+
 
 
 
